@@ -1,0 +1,1 @@
+/home/pan/dev_ws/src/articubot_ONE/launch/launch_sim.launch.py
