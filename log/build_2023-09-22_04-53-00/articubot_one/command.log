@@ -1,0 +1,6 @@
+Invoking command in '/home/pan/dev_ws/articubot_one/build/articubot_one': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/pan/dev_ws/articubot_one/src/articubot_one -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pan/dev_ws/articubot_one/install/articubot_one
+Invoked command in '/home/pan/dev_ws/articubot_one/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/pan/dev_ws/articubot_one/src/articubot_one -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pan/dev_ws/articubot_one/install/articubot_one
+Invoking command in '/home/pan/dev_ws/articubot_one/build/articubot_one': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pan/dev_ws/articubot_one/build/articubot_one -- -j4 -l4
+Invoked command in '/home/pan/dev_ws/articubot_one/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pan/dev_ws/articubot_one/build/articubot_one -- -j4 -l4
+Invoking command in '/home/pan/dev_ws/articubot_one/build/articubot_one': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/pan/dev_ws/articubot_one/build/articubot_one
+Invoked command in '/home/pan/dev_ws/articubot_one/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/pan/dev_ws/articubot_one/build/articubot_one

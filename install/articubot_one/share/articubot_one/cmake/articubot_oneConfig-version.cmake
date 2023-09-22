@@ -1,1 +1,1 @@
-/home/pan/dev_ws/build/articubot_one/ament_cmake_core/articubot_oneConfig-version.cmake
+/home/pan/dev_ws/articubot_one/build/articubot_one/ament_cmake_core/articubot_oneConfig-version.cmake

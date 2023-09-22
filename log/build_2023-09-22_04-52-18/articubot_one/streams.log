@@ -1,0 +1,35 @@
+[0.015s] Invoking command in '/home/pan/dev_ws/articubot_one/build/articubot_one': /usr/bin/cmake /home/pan/dev_ws/articubot_one/src/articubot_one -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pan/dev_ws/articubot_one/install/articubot_one
+[0.178s] -- The C compiler identification is GNU 9.4.0
+[0.300s] -- The CXX compiler identification is GNU 9.4.0
+[0.308s] -- Check for working C compiler: /usr/bin/cc
+[0.454s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.458s] -- Detecting C compiler ABI info
+[0.565s] -- Detecting C compiler ABI info - done
+[0.574s] -- Detecting C compile features
+[0.575s] -- Detecting C compile features - done
+[0.580s] -- Check for working CXX compiler: /usr/bin/c++
+[0.690s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.692s] -- Detecting CXX compiler ABI info
+[0.875s] -- Detecting CXX compiler ABI info - done
+[0.894s] -- Detecting CXX compile features
+[0.895s] -- Detecting CXX compile features - done
+[0.905s] CMake Error at CMakeLists.txt:19 (find_package):
+[0.905s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.905s]   has asked CMake to find a package configuration file provided by
+[0.905s]   "ament_cmake", but CMake did not find one.
+[0.905s] 
+[0.905s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.905s]   any of the following names:
+[0.905s] 
+[0.905s]     ament_cmakeConfig.cmake
+[0.905s]     ament_cmake-config.cmake
+[0.905s] 
+[0.905s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.905s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.905s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.905s]   has been installed.
+[0.905s] 
+[0.905s] 
+[0.905s] -- Configuring incomplete, errors occurred!
+[0.906s] See also "/home/pan/dev_ws/articubot_one/build/articubot_one/CMakeFiles/CMakeOutput.log".
+[0.909s] Invoked command in '/home/pan/dev_ws/articubot_one/build/articubot_one' returned '1': /usr/bin/cmake /home/pan/dev_ws/articubot_one/src/articubot_one -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pan/dev_ws/articubot_one/install/articubot_one

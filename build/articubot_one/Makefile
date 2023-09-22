@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pan/dev_ws/src/articubot_ONE
+CMAKE_SOURCE_DIR = /home/pan/dev_ws/articubot_one/src/articubot_one
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pan/dev_ws/build/articubot_one
+CMAKE_BINARY_DIR = /home/pan/dev_ws/articubot_one/build/articubot_one
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pan/dev_ws/build/articubot_one/CMakeFiles /home/pan/dev_ws/build/articubot_one/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pan/dev_ws/articubot_one/build/articubot_one/CMakeFiles /home/pan/dev_ws/articubot_one/build/articubot_one/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pan/dev_ws/build/articubot_one/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pan/dev_ws/articubot_one/build/articubot_one/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

@@ -1,0 +1,6 @@
+[0.023s] Invoking command in '/home/pan/dev_ws/articubot_one/build/articubot_one': /usr/bin/cmake --build /home/pan/dev_ws/articubot_one/build/articubot_one -- -j4 -l4
+[0.050s] CMake Error: The current CMakeCache.txt directory /home/pan/dev_ws/articubot_one/build/articubot_one/CMakeCache.txt is different than the directory /home/pan/dev_ws/build/articubot_one where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+[0.061s] CMake Error: The source directory "/home/pan/dev_ws/src/articubot_ONE" does not exist.
+[0.061s] Specify --help for usage, or press the help button on the CMake GUI.
+[0.063s] make: *** [Makefile:222: cmake_check_build_system] Error 1
+[0.065s] Invoked command in '/home/pan/dev_ws/articubot_one/build/articubot_one' returned '2': /usr/bin/cmake --build /home/pan/dev_ws/articubot_one/build/articubot_one -- -j4 -l4

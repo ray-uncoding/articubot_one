@@ -1,1 +1,1 @@
-/home/pan/dev_ws/src/articubot_ONE/launch/camera.launch.py
+/home/pan/dev_ws/articubot_one/src/articubot_one/launch/camera.launch.py

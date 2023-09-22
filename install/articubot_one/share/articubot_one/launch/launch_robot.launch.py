@@ -1,1 +1,1 @@
-/home/pan/dev_ws/src/articubot_ONE/launch/launch_robot.launch.py
+/home/pan/dev_ws/articubot_one/src/articubot_one/launch/launch_robot.launch.py

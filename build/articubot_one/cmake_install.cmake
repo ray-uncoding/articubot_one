@@ -1,8 +1,8 @@
-# Install script for directory: /home/pan/dev_ws/src/articubot_ONE
+# Install script for directory: /home/pan/dev_ws/articubot_one/src/articubot_one
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/pan/dev_ws/install/articubot_one")
+  set(CMAKE_INSTALL_PREFIX "/home/pan/dev_ws/articubot_one/install/articubot_one")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,7 +38,7 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/pan/dev_ws/build/articubot_one/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/pan/dev_ws/articubot_one/build/articubot_one/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -49,5 +49,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/pan/dev_ws/build/articubot_one/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/pan/dev_ws/articubot_one/build/articubot_one/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

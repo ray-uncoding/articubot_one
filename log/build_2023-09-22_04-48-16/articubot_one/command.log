@@ -1,0 +1,2 @@
+Invoking command in '/home/pan/dev_ws/articubot_one/build/articubot_one': /usr/bin/cmake --build /home/pan/dev_ws/articubot_one/build/articubot_one -- -j4 -l4
+Invoked command in '/home/pan/dev_ws/articubot_one/build/articubot_one' returned '2': /usr/bin/cmake --build /home/pan/dev_ws/articubot_one/build/articubot_one -- -j4 -l4

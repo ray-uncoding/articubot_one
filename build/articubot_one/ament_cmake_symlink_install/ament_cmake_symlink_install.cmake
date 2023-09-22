@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/pan/dev_ws/install/articubot_one/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/pan/dev_ws/articubot_one/install/articubot_one/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/pan/dev_ws/install/articubot_one/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/pan/dev_ws/articubot_one/install/articubot_one/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/pan/dev_ws/install/articubot_one/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/pan/dev_ws/articubot_one/install/articubot_one/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/pan/dev_ws/install/articubot_one/${destination}")
+      set(destination "/home/pan/dev_ws/articubot_one/install/articubot_one/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -311,46 +311,46 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install(DIRECTORY "config" "description" "launch" "worlds" "DESTINATION" "share/articubot_one")
-ament_cmake_symlink_install_directory("/home/pan/dev_ws/src/articubot_ONE" DIRECTORY "config" "description" "launch" "worlds" "DESTINATION" "share/articubot_one")
+ament_cmake_symlink_install_directory("/home/pan/dev_ws/articubot_one/src/articubot_one" DIRECTORY "config" "description" "launch" "worlds" "DESTINATION" "share/articubot_one")
 
-# install(FILES "/home/pan/dev_ws/build/articubot_one/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/articubot_one" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/pan/dev_ws/src/articubot_ONE" FILES "/home/pan/dev_ws/build/articubot_one/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/articubot_one" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/pan/dev_ws/articubot_one/build/articubot_one/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/articubot_one" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/pan/dev_ws/articubot_one/src/articubot_one" FILES "/home/pan/dev_ws/articubot_one/build/articubot_one/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/articubot_one" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/pan/dev_ws/build/articubot_one/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/articubot_one" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/pan/dev_ws/src/articubot_ONE" FILES "/home/pan/dev_ws/build/articubot_one/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/articubot_one" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/pan/dev_ws/articubot_one/build/articubot_one/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/articubot_one" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/pan/dev_ws/articubot_one/src/articubot_one" FILES "/home/pan/dev_ws/articubot_one/build/articubot_one/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/articubot_one" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/articubot_one/environment")
-ament_cmake_symlink_install_files("/home/pan/dev_ws/src/articubot_ONE" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/articubot_one/environment")
+ament_cmake_symlink_install_files("/home/pan/dev_ws/articubot_one/src/articubot_one" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/articubot_one/environment")
 
-# install(FILES "/home/pan/dev_ws/build/articubot_one/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/articubot_one/environment")
-ament_cmake_symlink_install_files("/home/pan/dev_ws/src/articubot_ONE" FILES "/home/pan/dev_ws/build/articubot_one/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/articubot_one/environment")
+# install(FILES "/home/pan/dev_ws/articubot_one/build/articubot_one/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/articubot_one/environment")
+ament_cmake_symlink_install_files("/home/pan/dev_ws/articubot_one/src/articubot_one" FILES "/home/pan/dev_ws/articubot_one/build/articubot_one/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/articubot_one/environment")
 
 # install(FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/articubot_one/environment")
-ament_cmake_symlink_install_files("/home/pan/dev_ws/src/articubot_ONE" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/articubot_one/environment")
+ament_cmake_symlink_install_files("/home/pan/dev_ws/articubot_one/src/articubot_one" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/articubot_one/environment")
 
-# install(FILES "/home/pan/dev_ws/build/articubot_one/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/articubot_one/environment")
-ament_cmake_symlink_install_files("/home/pan/dev_ws/src/articubot_ONE" FILES "/home/pan/dev_ws/build/articubot_one/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/articubot_one/environment")
+# install(FILES "/home/pan/dev_ws/articubot_one/build/articubot_one/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/articubot_one/environment")
+ament_cmake_symlink_install_files("/home/pan/dev_ws/articubot_one/src/articubot_one" FILES "/home/pan/dev_ws/articubot_one/build/articubot_one/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/articubot_one/environment")
 
-# install(FILES "/home/pan/dev_ws/build/articubot_one/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/articubot_one")
-ament_cmake_symlink_install_files("/home/pan/dev_ws/src/articubot_ONE" FILES "/home/pan/dev_ws/build/articubot_one/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/articubot_one")
+# install(FILES "/home/pan/dev_ws/articubot_one/build/articubot_one/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/articubot_one")
+ament_cmake_symlink_install_files("/home/pan/dev_ws/articubot_one/src/articubot_one" FILES "/home/pan/dev_ws/articubot_one/build/articubot_one/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/articubot_one")
 
-# install(FILES "/home/pan/dev_ws/build/articubot_one/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/articubot_one")
-ament_cmake_symlink_install_files("/home/pan/dev_ws/src/articubot_ONE" FILES "/home/pan/dev_ws/build/articubot_one/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/articubot_one")
+# install(FILES "/home/pan/dev_ws/articubot_one/build/articubot_one/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/articubot_one")
+ament_cmake_symlink_install_files("/home/pan/dev_ws/articubot_one/src/articubot_one" FILES "/home/pan/dev_ws/articubot_one/build/articubot_one/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/articubot_one")
 
-# install(FILES "/home/pan/dev_ws/build/articubot_one/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/articubot_one")
-ament_cmake_symlink_install_files("/home/pan/dev_ws/src/articubot_ONE" FILES "/home/pan/dev_ws/build/articubot_one/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/articubot_one")
+# install(FILES "/home/pan/dev_ws/articubot_one/build/articubot_one/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/articubot_one")
+ament_cmake_symlink_install_files("/home/pan/dev_ws/articubot_one/src/articubot_one" FILES "/home/pan/dev_ws/articubot_one/build/articubot_one/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/articubot_one")
 
-# install(FILES "/home/pan/dev_ws/build/articubot_one/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/articubot_one")
-ament_cmake_symlink_install_files("/home/pan/dev_ws/src/articubot_ONE" FILES "/home/pan/dev_ws/build/articubot_one/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/articubot_one")
+# install(FILES "/home/pan/dev_ws/articubot_one/build/articubot_one/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/articubot_one")
+ament_cmake_symlink_install_files("/home/pan/dev_ws/articubot_one/src/articubot_one" FILES "/home/pan/dev_ws/articubot_one/build/articubot_one/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/articubot_one")
 
-# install(FILES "/home/pan/dev_ws/build/articubot_one/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/articubot_one")
-ament_cmake_symlink_install_files("/home/pan/dev_ws/src/articubot_ONE" FILES "/home/pan/dev_ws/build/articubot_one/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/articubot_one")
+# install(FILES "/home/pan/dev_ws/articubot_one/build/articubot_one/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/articubot_one")
+ament_cmake_symlink_install_files("/home/pan/dev_ws/articubot_one/src/articubot_one" FILES "/home/pan/dev_ws/articubot_one/build/articubot_one/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/articubot_one")
 
-# install(FILES "/home/pan/dev_ws/build/articubot_one/ament_cmake_index/share/ament_index/resource_index/packages/articubot_one" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/pan/dev_ws/src/articubot_ONE" FILES "/home/pan/dev_ws/build/articubot_one/ament_cmake_index/share/ament_index/resource_index/packages/articubot_one" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/pan/dev_ws/articubot_one/build/articubot_one/ament_cmake_index/share/ament_index/resource_index/packages/articubot_one" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/pan/dev_ws/articubot_one/src/articubot_one" FILES "/home/pan/dev_ws/articubot_one/build/articubot_one/ament_cmake_index/share/ament_index/resource_index/packages/articubot_one" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/pan/dev_ws/build/articubot_one/ament_cmake_core/articubot_oneConfig.cmake" "/home/pan/dev_ws/build/articubot_one/ament_cmake_core/articubot_oneConfig-version.cmake" "DESTINATION" "share/articubot_one/cmake")
-ament_cmake_symlink_install_files("/home/pan/dev_ws/src/articubot_ONE" FILES "/home/pan/dev_ws/build/articubot_one/ament_cmake_core/articubot_oneConfig.cmake" "/home/pan/dev_ws/build/articubot_one/ament_cmake_core/articubot_oneConfig-version.cmake" "DESTINATION" "share/articubot_one/cmake")
+# install(FILES "/home/pan/dev_ws/articubot_one/build/articubot_one/ament_cmake_core/articubot_oneConfig.cmake" "/home/pan/dev_ws/articubot_one/build/articubot_one/ament_cmake_core/articubot_oneConfig-version.cmake" "DESTINATION" "share/articubot_one/cmake")
+ament_cmake_symlink_install_files("/home/pan/dev_ws/articubot_one/src/articubot_one" FILES "/home/pan/dev_ws/articubot_one/build/articubot_one/ament_cmake_core/articubot_oneConfig.cmake" "/home/pan/dev_ws/articubot_one/build/articubot_one/ament_cmake_core/articubot_oneConfig-version.cmake" "DESTINATION" "share/articubot_one/cmake")
 
-# install(FILES "/home/pan/dev_ws/src/articubot_ONE/package.xml" "DESTINATION" "share/articubot_one")
-ament_cmake_symlink_install_files("/home/pan/dev_ws/src/articubot_ONE" FILES "/home/pan/dev_ws/src/articubot_ONE/package.xml" "DESTINATION" "share/articubot_one")
+# install(FILES "/home/pan/dev_ws/articubot_one/src/articubot_one/package.xml" "DESTINATION" "share/articubot_one")
+ament_cmake_symlink_install_files("/home/pan/dev_ws/articubot_one/src/articubot_one" FILES "/home/pan/dev_ws/articubot_one/src/articubot_one/package.xml" "DESTINATION" "share/articubot_one")
